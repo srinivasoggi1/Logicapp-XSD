@@ -1,0 +1,20 @@
+git init      # initilize a git repo
+git status    # to check the status of the staging file
+git add *     # to add to staging 
+git commit -m "1st commmit"  # commit to staged chagnes with descriptive messege
+git remote add origin https://github.com/srinivasoggi1/Logicapp-XSD.git  # to push the change to the remote repo 
+git push orign master  # push to remote repo on master branch
+
+
+# choco install for powershll
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+
+
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+
+
+
+login git
+gh auth login -w
